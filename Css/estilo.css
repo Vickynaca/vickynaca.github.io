@@ -1,11 +1,15 @@
 
+body {
+    background-color: blanchedalmond;
+}
+
 h1 {
     font-family: 'Philosopher', sans-serif;
     color: aqua;
     text-shadow: 2px 2px black;
 }
 
-h3 {
+h3, h5 {
     font-family: 'Philosopher', sans-serif;
     color: darkgreen;
 }
@@ -15,20 +19,41 @@ p, ul, th, td {
     color: black;
 }
 
-section {
-    background-color:blanchedalmond;
-}
-
-div.dropdown {
-    
-    margin-left: 120px;
-    margin-top: 50px;
-    margin-bottom: 100px;
-}
-
 button {
     font-family: 'Philosopher', sans-serif;
     background-color: blue;
     color: white;
-    
+    margin-top: 10px;
+    margin-bottom: 10px;
+} 
+
+.nav-enlace {
+    display: inline-block;
+    background:darkgreen ;
+    color: white;
+    padding: 10px 30px;
+
+}
+
+.nav-enlace:hover{
+    background: rgb(131, 160, 160) ;
+}
+
+nav {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: rgb(221, 216, 216);
+    padding: 20px;
+    display: flex;
+    justify-content: space-around; 
+}
+
+@media (max-width: 600px) {
+    nav {
+        background: white;
+        flex-direction: column;
+    }
+    .nav-enlace{
+        margin: 10px 0;
+    }
 }
